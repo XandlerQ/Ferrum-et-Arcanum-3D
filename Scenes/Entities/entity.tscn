@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm7hg6qy67n0j"]
+
+[ext_resource type="Script" path="res://Scenes/Entities/entity.gd" id="1_n7rym"]
+[ext_resource type="PackedScene" uid="uid://b102awjuy85yq" path="res://Scenes/Entities/Properties/entity_movement.tscn" id="2_ycm0l"]
+[ext_resource type="PackedScene" uid="uid://dgfvw1gffmv0m" path="res://Scenes/Entities/Properties/entity_rotation.tscn" id="3_l20cs"]
+
+[node name="Entity" type="CharacterBody3D"]
+script = ExtResource("1_n7rym")
+
+[node name="EntityMovement" parent="." instance=ExtResource("2_ycm0l")]
+
+[node name="EntityRotation" parent="." instance=ExtResource("3_l20cs")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b102awjuy85yq"]
+
+[ext_resource type="Script" path="res://Scenes/Entities/Properties/entity_movement.gd" id="1_bbt1h"]
+
+[node name="EntityMovement" type="Node3D"]
+script = ExtResource("1_bbt1h")
+
+[node name="DashTimer" type="Timer" parent="."]
