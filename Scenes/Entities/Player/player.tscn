@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://euencjabjw28"]
+[gd_scene load_steps=6 format=3 uid="uid://euencjabjw28"]
 
 [ext_resource type="PackedScene" uid="uid://cm7hg6qy67n0j" path="res://Scenes/Entities/entity.tscn" id="1_p88c6"]
 [ext_resource type="Script" path="res://Scenes/Entities/Player/player.gd" id="2_yiivx"]
 [ext_resource type="PackedScene" uid="uid://i3vj2y3cd8pa" path="res://Scenes/Entities/Player/player_input.tscn" id="3_e8km0"]
+[ext_resource type="Script" path="res://Scenes/Entities/Player/camera.gd" id="4_wlp4v"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_en8hl"]
 
@@ -12,8 +13,8 @@ script = ExtResource("2_yiivx")
 [node name="PlayerInput" parent="." index="2" instance=ExtResource("3_e8km0")]
 
 [node name="Camera" type="Camera3D" parent="." index="3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 fov = 90.0
+script = ExtResource("4_wlp4v")
 
 [node name="CollisionShape3D" parent="." index="4"]
 shape = SubResource("CapsuleShape3D_en8hl")

@@ -36,4 +36,6 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("Jump"):
 		$EntityMovement.jump();
-	move_and_slide()
+	move_and_slide();
+	
+	$Camera.camera_movement(delta, VectorConverter.convert_vector_3_2(velocity).length(), is_on_floor());

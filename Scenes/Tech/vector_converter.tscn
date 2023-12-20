@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxik0lg18bbjb"]
+
+[ext_resource type="Script" path="res://Scenes/Tech/vector_converter.gd" id="1_ybes5"]
+
+[node name="VectorConverter" type="Node3D"]
+script = ExtResource("1_ybes5")
